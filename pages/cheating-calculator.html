@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheating Probability Calculator</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cheating Probability Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calculate Your Cheating Probability</h2>
+            <form id="cheating-calculator-form">
+                <label for="num-students">Number of Students:</label>
+                <input type="number" id="num-students" name="num-students" required>
+
+                <label for="teacher-attention">Teacher's Attention Level (1-10):</label>
+                <input type="number" id="teacher-attention" name="teacher-attention" min="1" max="10" required>
+
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="result" class="hidden">
+                <h3>Your Cheating Probability:</h3>
+                <p id="probability"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Class Webpage Project</p>
+    </footer>
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>
