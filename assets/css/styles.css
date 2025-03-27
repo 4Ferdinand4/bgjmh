@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -76,10 +76,84 @@ form input[type="submit"]:hover {
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #35424a;
-    color: #ffffff;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.navbar .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu ul li a:hover {
+    color: #007aff;
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #007aff, #0056b3);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: #007aff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.content-section {
+    padding: 4rem 2rem;
+    text-align: center;
 }
