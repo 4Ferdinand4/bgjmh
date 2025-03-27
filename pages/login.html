@@ -9,10 +9,10 @@
 <body>
     <div class="container">
         <h1>Login</h1>
-        <form action="#" method="POST" id="loginForm">
+        <form id="loginForm">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
@@ -22,6 +22,27 @@
         </form>
         <p>Don't have an account? <a href="registration.html">Register here</a></p>
     </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            const response = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                alert(result.message);
+                localStorage.setItem('token', result.token); // Save token for future use
+            } else {
+                alert(result.message);
+            }
+        });
+    </script>
     <script src="../assets/js/scripts.js"></script>
 </body>
 </html>
