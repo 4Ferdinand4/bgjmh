@@ -1,65 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Resources</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Učebné zdroje</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Learning Resources</h1>
-        <nav>
-            <ul>
-                <li><a href="registration.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="timetable.html">Timetable</a></li>
-                <li><a href="calendar.html">Calendar</a></li>
-                <li><a href="chat.html">Chat</a></li>
-                <li><a href="photo-album.html">Photo Album</a></li>
-                <li><a href="shared-cloud.html">Shared Cloud</a></li>
-                <li><a href="cheating-calculator.html">Cheating Probability Calculator</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact-list.html">Contact List</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="resources">
-            <h2>Available Learning Resources</h2>
-            <div class="resource-item">
-                <h3>Resource Title 1</h3>
-                <p>Description of resource 1. <a href="#">Link to resource 1</a></p>
-            </div>
-            <div class="resource-item">
-                <h3>Resource Title 2</h3>
-                <p>Description of resource 2. <a href="#">Link to resource 2</a></p>
-            </div>
-            <div class="resource-item">
-                <h3>Resource Title 3</h3>
-                <p>Description of resource 3. <a href="#">Link to resource 3</a></p>
-            </div>
-            <!-- Additional resources can be added here -->
-        </section>
-        <section id="edit-resources">
-            <h2>Edit Learning Resources</h2>
-            <form id="edit-resource-form">
-                <label for="resource-title">Resource Title:</label>
-                <input type="text" id="resource-title" name="resource-title" required>
-                
-                <label for="resource-description">Description:</label>
-                <textarea id="resource-description" name="resource-description" required></textarea>
-                
-                <label for="resource-link">Link:</label>
-                <input type="url" id="resource-link" name="resource-link" required>
-                
-                <button type="submit">Submit Changes</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Class Webpage Project. All rights reserved.</p>
-    </footer>
-    <script src="../assets/js/scripts.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Učebné zdroje</h1>
+    <ul>
+      <li><a href="https://www.khanacademy.org">Khan Academy</a></li>
+      <li><a href="https://www.coursera.org">Coursera</a></li>
+    </ul>
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

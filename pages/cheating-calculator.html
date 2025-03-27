@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheating Probability Calculator</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulačka</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Cheating Probability Calculator</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Calculate Your Cheating Probability</h2>
-            <form id="cheating-calculator-form">
-                <label for="num-students">Number of Students:</label>
-                <input type="number" id="num-students" name="num-students" required>
-
-                <label for="teacher-attention">Teacher's Attention Level (1-10):</label>
-                <input type="number" id="teacher-attention" name="teacher-attention" min="1" max="10" required>
-
-                <button type="submit">Calculate</button>
-            </form>
-            <div id="result" class="hidden">
-                <h3>Your Cheating Probability:</h3>
-                <p id="probability"></p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Class Webpage Project</p>
-    </footer>
-    <script src="../assets/js/scripts.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Kalkulačka</h1>
+    <input type="number" id="num1" placeholder="Prvé číslo">
+    <input type="number" id="num2" placeholder="Druhé číslo">
+    <button onclick="calculate()">Vypočítať</button>
+    <p>Výsledok: <span id="result"></span></p>
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
+  <script>
+    function calculate() {
+      const num1 = parseFloat(document.getElementById('num1').value);
+      const num2 = parseFloat(document.getElementById('num2').value);
+      const result = num1 + num2;
+      document.getElementById('result').textContent = result;
+    }
+  </script>
 </body>
 </html>

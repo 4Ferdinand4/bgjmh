@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const menu = document.querySelector('.menu');
-
-    hamburgerMenu.addEventListener('click', () => {
-        menu.classList.toggle('active');
-        hamburgerMenu.classList.toggle('open');
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.style.backgroundColor = '#222';
+      } else {
+        nav.style.backgroundColor = '#333';
+      }
     });
-});
+  });

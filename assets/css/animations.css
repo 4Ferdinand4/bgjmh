@@ -1,14 +1,17 @@
 @keyframes fadeIn {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+      opacity: 0;
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+      opacity: 1;
     }
-}
-
-.hero h1, .hero p, .hero .btn {
-    animation: fadeIn 1s ease-in-out;
-}
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s;
+  }

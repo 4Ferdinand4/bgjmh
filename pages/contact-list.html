@@ -1,60 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact List</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakty</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Contact List</h1>
-        <p>Manage your classmates' contact information.</p>
-    </header>
-    <main>
-        <section id="contact-list">
-            <h2>Your Contacts</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Placeholder for contact list entries -->
-                    <tr>
-                        <td>John Doe</td>
-                        <td>john.doe@example.com</td>
-                        <td>(123) 456-7890</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
-                        </td>
-                    </tr>
-                    <!-- More entries can be added here -->
-                </tbody>
-            </table>
-            <h3>Add New Contact</h3>
-            <form id="add-contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <button type="submit">Add Contact</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Class Webpage Project</p>
-    </footer>
-    <script src="../assets/js/scripts.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Kontakty</h1>
+    <ul>
+      <li>Ferdinand – ferdinand@example.com</li>
+      <li>Zempo – zempo@example.com</li>
+    </ul>
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

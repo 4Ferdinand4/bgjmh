@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Album</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotoalbum</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Photo Album</h1>
-    </header>
-    <main>
-        <section id="upload-section">
-            <h2>Upload Photo</h2>
-            <form id="upload-form" action="#" method="post" enctype="multipart/form-data">
-                <label for="photo">Choose a photo:</label>
-                <input type="file" id="photo" name="photo" accept="image/*" required>
-                <input type="text" id="username" name="username" placeholder="Your Username" required>
-                <button type="submit">Upload</button>
-            </form>
-        </section>
-        <section id="photo-gallery">
-            <h2>Uploaded Photos</h2>
-            <div id="photos">
-                <!-- Placeholder for uploaded photos -->
-                <p>No photos uploaded yet.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Class Webpage Project</p>
-    </footer>
-    <script src="../assets/js/scripts.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Fotoalbum</h1>
+    <p>Tu budú fotky. Zatiaľ pridaj svoje obrázky do priečinka assets/images/.</p>
+    <!-- Príklad: <img src="../assets/images/foto1.jpg" alt="Fotka"> -->
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

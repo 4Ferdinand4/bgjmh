@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrácia</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Registration Form</h1>
-        <form id="registrationForm">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Register</button>
-        </form>
-    </div>
-
-    <script>
-        document.getElementById('registrationForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-
-            const response = await fetch('/register', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, email, password }),
-            });
-
-            const result = await response.json();
-            alert(result.message);
-        });
-    </script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Registrácia</h1>
+    <form>
+      <input type="text" placeholder="Meno" required>
+      <input type="email" placeholder="Email" required>
+      <button type="submit">Registrovať</button>
+    </form>
+    <p>Zatiaľ je to len statický formulár. Skutočná registrácia by vyžadovala backend.</p>
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>

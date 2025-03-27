@@ -1,44 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shared Cloud</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zdieľaný cloud</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/animations.css">
 </head>
 <body>
-    <header>
-        <h1>Shared Cloud</h1>
-        <p>Upload and share your notes with classmates.</p>
-    </header>
-    
-    <main>
-        <section id="upload-section">
-            <h2>Upload Notes</h2>
-            <form id="upload-form" action="#" method="post" enctype="multipart/form-data">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                
-                <label for="file">Select file:</label>
-                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.ppt,.pptx" required>
-                
-                <button type="submit">Upload</button>
-            </form>
-        </section>
-
-        <section id="notes-list">
-            <h2>Uploaded Notes</h2>
-            <ul id="notes">
-                <!-- Placeholder for uploaded notes -->
-                <li>No notes uploaded yet.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Class Webpage Project</p>
-    </footer>
-
-    <script src="../assets/js/scripts.js"></script>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Domov</a></li>
+      <li><a href="calendar.html">Kalendár</a></li>
+      <li><a href="news.html">Novinky</a></li>
+      <li><a href="photo-album.html">Fotoalbum</a></li>
+      <li><a href="/chat">Chat</a></li>
+      <li><a href="/login">Prihlásenie</a></li>
+    </ul>
+  </nav>
+  <div class="container fade-in">
+    <h1>Zdieľaný cloud</h1>
+    <p>Tu môžeš zdieľať súbory. Zatiaľ je to placeholder.</p>
+  </div>
+  <script src="../assets/js/menu.js"></script>
+  <script src="../assets/js/scripts.js"></script>
 </body>
 </html>
